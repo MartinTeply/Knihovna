@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
+
 
 public class Book implements Borrowable {
     private String title;
