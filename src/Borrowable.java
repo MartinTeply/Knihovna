@@ -1,4 +1,7 @@
 package PACKAGE_NAME;
 
-public class Borrowable {
+public interface Borrowable {
+    void borrow(User user);
+    void returnBook();
 }
+
