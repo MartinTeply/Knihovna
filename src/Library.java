@@ -23,20 +23,20 @@ public class Library {
         return users;
     }
 
-    // Ukládání knih do CSV
+    
     public void saveBooksToCSV(String filename) throws IOException {
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
-            writer.println("Title,Author,Year,Available,BorrowedBy"); // Hlavička CSV souboru
+            writer.println("Title,Author,Year,Available,BorrowedBy"); 
             for (Book book : books) {
                 writer.println(book.toCSV());
             }
         }
     }
 
-    // Ukládání uživatelů do CSV
+    
     public void saveUsersToCSV(String filename) throws IOException {
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
-            writer.println("Name"); // Hlavička CSV souboru pro uživatele
+            writer.println("Name"); 
             for (User user : users) {
                 writer.println(user.getName());
             }
